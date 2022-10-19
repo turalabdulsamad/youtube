@@ -1,0 +1,138 @@
+
+  .thumbnail {
+    /* width: 300px; */
+    width: 100%;
+    border-width: 2px;
+  }
+ 
+  .video-info-grid{
+    display: grid;
+     grid-template-columns: 50px 1fr;
+  }
+   
+  /* .video-info{
+ background-color: gray;
+
+   } */
+   .video-title{
+     margin-top: 0;
+     font-size: 14px;
+     font-weight: 500;
+     line-height: 20px;
+     margin-bottom:12px;
+   }
+
+@media (min-width:1001px){
+  .video-title{
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+   .videos{
+     display: inline-block;
+   }
+   .profile-picture{
+     width: 36px;
+     border-radius: 30px;
+   }
+   .thumbnail-row{
+     margin-bottom: 8px;
+     position: relative;
+
+   }
+   .video-author,
+   .video-stats{
+      color:rgb(96, 96, 96);
+   }
+   .video-author{
+     margin-bottom: 4px;
+   }
+   .video-grid{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px ;
+   } 
+
+   @media (max-width: 750px){
+      .video-grid{
+        grid-template-columns: 1fr 1fr;
+      }
+   }
+
+@media (min-width:751px) and (max-width:999){
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+   @media (min-width: 1000px){
+    .video-grid{
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+   }
+
+
+   
+   .video-time{
+    font-family: Roboto,Arial;
+    font-size: 12px;
+    font-weight: 500;
+    padding:4px ;
+   
+    border-radius: 2px;
+
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+    }
+
+    
+.link-to-video{
+  text-decoration: none;
+  color:inherit;
+}
+
+
+
+.channel-picture .channel-picture-tooltip{
+  position: relative;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  justify-content: center;
+}
+.channel-picture-tooltip{
+position: absolute;
+width: 250px;
+z-index:100;
+ background-color: white;
+ border-radius: 5px;
+ box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+transition: opacity 0.15s;
+}
+
+
+.channel-picture-tooltip .profile-picture {
+  width: 60px;
+  margin-right: 10px;
+}
+.channel-picture-tooltip .video-author{
+   color: black;
+  font-weight: bold;
+}
+.channel-picture-tooltip{
+  font-family: Roboto,Arial;
+}
+.channel-picture-tooltip .channel-subscribers{
+  white-space: nowrap;
+
+} 
+
+.channel-picture:hover .channel-picture-tooltip{
+  opacity: 1;
+  background-color: white;
+}
